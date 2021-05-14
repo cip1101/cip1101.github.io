@@ -1,0 +1,34 @@
+body {
+			border: 10px solid #2F4F4F;
+			font-size: 1.30em;
+			color: Black;
+			background-color: White;
+		}
+		p {
+			text-align: justify;
+			line-height: 1.5;
+			font-family: Georgia;
+		}
+		h2{
+			text-align: left;
+			line-height: 1.5;
+			font-family: Georgia;
+			font-size: 4em;
+			color: #008B8B;
+			letter-spacing: 4px;
+			background-color: AliceBlue;
+		}
+		h1 {
+			text-align: left;
+			line-height: 1.5;
+			font-family: Tahoma;
+			font-size: 30px;
+			font-style: normal;
+			color: #4682B4;
+			background-color: HoneyDew;
+		}
+		h3 {
+			text-align: left;
+			font-family: New Times Roman;
+			font-size: 1em;
+		}

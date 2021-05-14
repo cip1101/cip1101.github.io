@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Noto+Serif:ital,wght@1,700&family=Oswald:wght@500&family=Yusei+Magic&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Home Page</title>
+	<style type="text/css">
+	body{
+			background-image:url('bg3.png'); 
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: auto;
+			font-family: Yusei Magic; 
+			font-size: 1.15em;
+			color:black;
+		
+		}
+	h1{
+		font-family: Lucida Handwriting; 
+		color: black;
+		text-align: center;
+		word-spacing:10px;
+		font-size:70px;
+		}
+	button{
+			border: none;
+			color: black;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			background-color: #FAEAA5;
+		}
+	button:hover{
+		border: solid brown;
+		}
+	.mySlides{
+		float: left;
+		padding: 20px;
+		}
+		
+	.imgSlide img-white {
+		cursor:pointer;
+		padding: 20px;
+		height:10px;
+		width:10px;
+		padding:25px;
+	}
+	
+	.picSlide{
+		border: 10px solid white;
+		background-color: white;
+		}
+	#picss{
+		padding: 20px;
+		}
+		.leftSlide{
+			border: none;
+			color: black;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 14px;
+			margin: 4px 2px;
+			cursor: pointer;
+			background-color:#FAEAA5;
+			}
+		.rightSlide{
+			border: none;
+			color: black;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 14px;
+			margin: 4px 2px;
+			cursor: pointer;
+			background-color:#FAEAA5;
+			}
+		.intro {
+		 padding: 10px;
+		 }
+		mark{
+		background-color: white;
+		color: black;
+		}
+		 
+    </style>
+</head>
+<body id="home">
+    <!--MELENDEZ, SHERRILL HANNAH-->
+    <!--03/13/2021-->
+	<h1><strong><mark>She is Sherrill.</mark></h1></strong>
+	<div align="left">
+	<hr color="white" width="100%" align="center" size="10">
+	<a href="MELENDEZ_ABOUTME_CSAD.html" title="About Me" target="newWin"><button>About Me</button></a>
+	<a href="MELENDEZ_RESUME_CSAD.html" title="Resume" target="newWin"><button>Resume</button></a>
+	<a href="MELENDEZ_PHOTOGALLERY_CSAD.html" title="Photos" target="newWin"><button>Photo gallery</button></a>
+	<a href="MELENDEZ_MYBEAT_CSAD.html" title="My Beat" target="newWin"><button>My Beat</button></a>
+	<a href="MELENDEZ_MYKINDOFFILM_CSAD.html" title="My Kind of Film" target="newWin"><button>My Kind of Film</button></a>
+	<a href="MELENDEZ_IMAGE-MAPPING_CSAD.html" title="My Dream Destinations" target="newWin"><button>My Dream Destinations</button></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href='https://www.facebook.com/sherrillhannaah/' title="Facebook Page"><img src="fb.png" width="40" height="40"></a>
+	<a href='https://www.tiktok.com/@sherrillhannaah?lang=en' title="Tiktok account"><img src="tiktok.png" width="40" height="40"></a>
+	<a href='https://www.linky.ph/sherrillhannah/' title="Shopee links"><img src="shopee.png" width="40" height="40"></a>
+	</div>
+	<br>
+	<br>
+  <div class="picSlide">
+  <img class="mySlides" src="homepic(1).jpg" width="300" height="500"> 
+  <img class="mySlides" src="homepic(2).jpg" width="350" height="500">
+  <img class="mySlides" src="homepic(3).jpg" width="320" height="500">
+  <p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A 20 year old girl named Sherrill Hannah who is currently studying at the 
+  University of the East taking up the program Bachelor of Science in Computer Science. 
+  She is also a food content creator who does different food vlogs on Tiktok. She believes in the saying 
+  "If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. 
+  The Vision Pulls You" by Steve Jobs. </p>
+
+  <div id="picss" align="left">
+    <button class="leftSlide" onclick="plusDivs(-1)">< Previous</button>
+    <button class="rightSlide" onclick="plusDivs(1)">Next ></button>
+	<span class="imgSlide img-white" onclick="currentDiv(1)"></span>
+    <span class="imgSlide img-white" onclick="currentDiv(2)"></span>
+    <span class="imgSlide img-white" onclick="currentDiv(3)"></span>
+</div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("imgSlide");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("img-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " img-white";
+}
+</script>
+
+</body>
+</html>
